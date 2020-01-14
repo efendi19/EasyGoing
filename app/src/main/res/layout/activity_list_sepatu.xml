@@ -12,25 +12,240 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <RelativeLayout
+            android:id="@+id/rl_rv1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/tvTitleGalon"
+                android:id="@+id/tvTitleMitraSepatu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Daftar Laundry Sepatu"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="17dp"
+                android:layout_marginBottom="17dp"
                 android:textStyle="bold"
-                android:textSize="19sp" />
+                android:textSize="25sp" />
 
-            <LinearLayout
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_mitraSepatu1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tvTitleGalon">
+                android:layout_below="@id/tvTitleMitraSepatu"
+                android:layout_marginEnd="17dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="0.5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/tvMitraSepatu1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:text="Nama Mitra Sepatu 1"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvListPakaianAlamat1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvMitraSepatu1"
+                            android:gravity="center_horizontal"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:text="Jl. Kenangan No 1"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:id="@+id/noHpSepatu1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvListPakaianAlamat1"
+                            android:layout_marginBottom="20dp"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="13sp"
+                            android:text="6289655511925" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/ll_rvSepatu1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cv_mitraSepatu1">
 
                 <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvMitraSepatu1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="10dp" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_mitraSepatu2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_rvSepatu1"
+                android:layout_marginTop="7dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="0.5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/tvMitraSepatu2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:text="Nama Mitra Sepatu 2"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvListPakaianAlamat2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvMitraSepatu2"
+                            android:gravity="center_horizontal"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:text="Jl. Yang Lurus No 2"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:id="@+id/noHpSepatu2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvListPakaianAlamat2"
+                            android:layout_marginBottom="20dp"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="13sp"
+                            android:text="6283829921300" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/ll_rvSepatu2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cv_mitraSepatu2">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvMitraSepatu2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="10dp" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_mitraSepatu3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_rvSepatu2"
+                android:layout_marginTop="7dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/tvMitraSepatu3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:text="Nama Mitra Sepatu 3"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvListPakaianAlamat3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvMitraSepatu3"
+                            android:gravity="center_horizontal"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="15dp"
+                            android:text="Jl. Menggapai bintang 3"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:id="@+id/noHpSepatu3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvListPakaianAlamat3"
+                            android:layout_marginBottom="20dp"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="13sp"
+                            android:text="628963835128" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/ll_rvSepatu3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cv_mitraSepatu3">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvMitraSepatu3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="7dp"
@@ -57,7 +272,7 @@
         android:background="@color/colorAccent">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbarSalurkan"
+            android:id="@+id/toolbarSepatu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -71,12 +286,12 @@
                 android:gravity="start|center_vertical"
                 android:orientation="horizontal">
 
-                <ImageView
+                <!--<ImageView
                     android:id="@+id/ic_back_input_kerusakan"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginEnd="7dp"
-                    android:src="@drawable/ic_back" />
+                    android:src="@drawable/ic_back" />-->
 
                 <TextView
                     android:layout_width="wrap_content"

@@ -6,43 +6,281 @@
     android:layout_height="match_parent"
     tools:context=".ListPakaianActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tvTitleLaundry"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Daftar Laundry"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="17dp"
-                android:textStyle="bold"
-                android:textSize="19sp" />
-
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/tvTitleLaundry">
+                android:layout_height="wrap_content">
 
-                <androidx.recyclerview.widget.RecyclerView
+                <TextView
+                    android:id="@+id/tvTitleLaundry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="17dp"
+                    android:text="Daftar Laundry"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvsubTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTitleLaundry"
+                    android:layout_marginStart="15dp"
+                    android:text="Mitra setia kami" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_list_laundry"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="7dp"
-                    android:layout_marginEnd="7dp"
-                    android:layout_marginTop="7dp"
-                    android:layout_marginBottom="10dp" />
+                    android:layout_below="@id/tvsubTitle"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="17dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="1dp">
 
-            </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center_horizontal">
 
-    </LinearLayout>
+                            <TextView
+                                android:id="@+id/tvListPakaianNama1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:paddingStart="15dp"
+                                android:paddingEnd="15dp"
+                                android:text="Nama Laundry 1"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvListPakaianAlamat1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tvListPakaianNama1"
+                                android:gravity="center_horizontal"
+                                android:paddingStart="15dp"
+                                android:paddingEnd="15dp"
+                                android:text="Jl. Apa adanya no.1"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/tvPhone1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:layout_marginBottom="20dp"
+                                android:layout_below="@id/tvListPakaianAlamat1"
+                                android:paddingStart="15dp"
+                                android:paddingEnd="15dp"
+                                android:textSize="11sp"
+                                android:text="+6289655511925" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/ly_rv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cv_list_laundry">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvListPakaian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="7dp"
+                        android:layout_marginBottom="10dp" />
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_list_laundry2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ly_rv1"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginEnd="17dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="1dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/tvListPakaianNama2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:paddingStart="15dp"
+                                android:paddingEnd="15dp"
+                                android:text="Nama Laundry 2"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvListPakaianAlamat2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tvListPakaianNama2"
+                                android:gravity="center_horizontal"
+                                android:paddingStart="15dp"
+                                android:paddingEnd="15dp"
+                                android:text="Jl. Pegangsaan timur no.2"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/tvPhone2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:layout_marginBottom="20dp"
+                                android:layout_below="@id/tvListPakaianAlamat2"
+                                android:paddingStart="15dp"
+                                android:paddingEnd="15dp"
+                                android:textSize="11sp"
+                                android:text="+6283829921300" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/ly_rv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cv_list_laundry2">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvListPakaian2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="7dp"
+                        android:layout_marginBottom="10dp" />
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_list_laundry3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ly_rv2"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginEnd="17dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="1dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/tvListPakaianNama3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:paddingStart="15dp"
+                                android:paddingEnd="15dp"
+                                android:text="Nama Laundry 3"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvListPakaianAlamat3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tvListPakaianNama3"
+                                android:gravity="center_horizontal"
+                                android:paddingStart="15dp"
+                                android:paddingEnd="15dp"
+                                android:text="Jl. Soekarno Hatta no 3"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/tvPhone3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:layout_marginBottom="20dp"
+                                android:layout_below="@id/tvListPakaianAlamat3"
+                                android:paddingStart="15dp"
+                                android:paddingEnd="15dp"
+                                android:textSize="11sp"
+                                android:text="+628958385128" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/ly_rv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cv_list_laundry3">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvListPakaian3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="7dp"
+                        android:layout_marginBottom="10dp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
     <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
@@ -56,7 +294,7 @@
         android:background="@color/colorAccent">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbarSalurkan"
+            android:id="@+id/toolbarPakaian"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -70,19 +308,19 @@
                 android:gravity="start|center_vertical"
                 android:orientation="horizontal">
 
-                <ImageView
+                <!--<ImageView
                     android:id="@+id/ic_back_input_kerusakan"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginEnd="7dp"
-                    android:src="@drawable/ic_back" />
+                    android:src="@drawable/ic_back" />-->
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="17sp"
+                    android:text="Pakaian"
                     android:textColor="@android:color/white"
-                    android:text="Pakaian" />
+                    android:textSize="17sp" />
 
             </LinearLayout>
 

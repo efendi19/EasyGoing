@@ -18,21 +18,22 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/tv_namaDepot"
+                android:id="@+id/tv_namaLaundry"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="17dp"
                 android:layout_centerHorizontal="true"
                 android:textSize="25sp"
                 android:textStyle="bold"
-                android:textColor="@color/colorPrimary"
-                android:text="Nama Laundry 1" />
+                android:text="nama1"
+                android:textColor="@color/colorPrimary" />
 
             <TextView
+                android:id="@+id/tv_alamatLaundry"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Jl. Yang Lurus No.1"
-                android:layout_below="@id/tv_namaDepot"
+                android:layout_below="@id/tv_namaLaundry"
+                android:text="alamat 1"
                 android:layout_centerHorizontal="true" />
 
         </RelativeLayout>
@@ -50,14 +51,29 @@
                 android:layout_height="wrap_content"
                 android:text="Harga per Kg Rp" />
 
-            <TextView
+            <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="7000"
-                android:textSize="20dp"
-                android:layout_marginStart="5dp"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold" />
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvHargaReguler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvHargaKilat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -67,11 +83,27 @@
                 android:text="-" />
 
             <TextView
+                android:id="@+id/tvJenisBrg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
                 android:textStyle="italic"
-                android:text="kilat" />
+                android:text="-" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="3dp"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/tvJenisPaket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:text="-" />
 
         </LinearLayout>
 
@@ -83,6 +115,7 @@
             android:layout_marginEnd="20dp">
 
             <Button
+                android:id="@+id/btnChatLaundry"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_button"
@@ -106,7 +139,7 @@
         android:background="@color/colorAccent">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbarSalurkan"
+            android:id="@+id/toolbarInfoPakaian"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -120,13 +153,13 @@
                 android:gravity="start|center_vertical"
                 android:orientation="horizontal">
 
-                <ImageView
+                <!--<ImageView
                     android:id="@+id/ic_back_input_kerusakan"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginEnd="7dp"
                     android:src="@drawable/ic_back" />
-
+-->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

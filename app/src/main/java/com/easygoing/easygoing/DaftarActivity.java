@@ -2,7 +2,6 @@ package com.easygoing.easygoing;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -51,9 +50,6 @@ public class DaftarActivity extends AppCompatActivity {
         btndaftar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*Intent intent= new Intent(DaftarActivity.this, HomeActivity.class);
-                startActivity(intent);
-                finish();*/
                 setUpRegister();
             }
         });

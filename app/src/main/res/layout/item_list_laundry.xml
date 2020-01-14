@@ -25,23 +25,28 @@
             android:layout_centerHorizontal="true">
 
             <TextView
-                android:id="@+id/tvListGalon"
+                android:id="@+id/tvListPakaianNama"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:layout_marginStart="15dp"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:text="Nama Laundry 1"
                 android:textColor="@color/colorPrimary" />
 
             <TextView
+                android:id="@+id/tvListPakaianAlamat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tvListGalon"
+                android:layout_below="@id/tvListPakaianNama"
                 android:layout_marginStart="15dp"
-                android:gravity="center_horizontal"
-                android:text="Jl. Yang Lurus No.1" />
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/tvListPakaianPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
 
         </RelativeLayout>
 

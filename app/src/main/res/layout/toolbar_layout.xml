@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar_home"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:orientation="horizontal"
+    android:minHeight="?android:attr/actionBarSize"
+    android:theme="@style/ThemeOverlay.AppCompat">
+
+    <TextView
+        android:id="@+id/toolbar_title_home"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:layout_width="match_parent"
+        android:layout_marginRight="64dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        android:text="Easy Going" />
+
+</androidx.appcompat.widget.Toolbar>

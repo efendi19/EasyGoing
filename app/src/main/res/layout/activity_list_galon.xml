@@ -31,6 +31,7 @@
                 android:layout_below="@id/tvTitleGalon">
 
                 <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvListGalon"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="7dp"
@@ -57,7 +58,7 @@
         android:background="@color/colorAccent">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbarSalurkan"
+            android:id="@+id/toolbarListGalon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -71,12 +72,12 @@
                 android:gravity="start|center_vertical"
                 android:orientation="horizontal">
 
-                <ImageView
+                <!--<ImageView
                     android:id="@+id/ic_back_input_kerusakan"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginEnd="7dp"
-                    android:src="@drawable/ic_back" />
+                    android:src="@drawable/ic_back" />-->
 
                 <TextView
                     android:layout_width="wrap_content"

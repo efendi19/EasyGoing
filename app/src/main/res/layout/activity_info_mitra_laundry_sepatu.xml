@@ -17,7 +17,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/tv_namaDepot"
+                android:id="@+id/tvNamaMitraSepatu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="17dp"
@@ -25,13 +25,14 @@
                 android:textSize="25sp"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimary"
-                android:text="Nama Laundry Sepatu 1" />
+                android:text="nul" />
 
             <TextView
+                android:id="@+id/tvAlamatMitraSepatu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Jl. Yang Panjang No.1"
-                android:layout_below="@id/tv_namaDepot"
+                android:text="nul"
+                android:layout_below="@id/tvNamaMitraSepatu"
                 android:layout_centerHorizontal="true" />
 
         </RelativeLayout>
@@ -47,12 +48,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Harga per Kg Rp" />
+                android:text="Harga Rp" />
 
             <TextView
+                android:id="@+id/tvInfoHargaSepatu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="20000"
+                android:text="0"
                 android:textSize="20dp"
                 android:layout_marginStart="5dp"
                 android:textColor="@color/colorPrimary"
@@ -73,11 +75,12 @@
                 android:text="-" />
 
             <TextView
+                android:id="@+id/tvInfoJenisSepatu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
                 android:textStyle="italic"
-                android:text="leather" />
+                android:text="" />
 
         </LinearLayout>
 
@@ -89,6 +92,7 @@
             android:layout_marginEnd="20dp">
 
             <Button
+                android:id="@+id/btnChatSepatu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_button"
@@ -112,7 +116,7 @@
         android:background="@color/colorAccent">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbarSalurkan"
+            android:id="@+id/toolbarInfoSepatu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -126,12 +130,12 @@
                 android:gravity="start|center_vertical"
                 android:orientation="horizontal">
 
-                <ImageView
+                <!--<ImageView
                     android:id="@+id/ic_back_input_kerusakan"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginEnd="7dp"
-                    android:src="@drawable/ic_back" />
+                    android:src="@drawable/ic_back" />-->
 
                 <TextView
                     android:layout_width="wrap_content"

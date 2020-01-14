@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">EasyGoing</string>
+    <string name="open">terbuka</string>
+    <string name="close">tertutup</string>
 </resources>

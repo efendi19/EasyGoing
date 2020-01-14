@@ -2,7 +2,7 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cv_list_galon"
-    android:layout_height="80dp"
+    android:layout_height="wrap_content"
     android:layout_width="match_parent"
     android:layout_marginTop="17dp"
     android:layout_marginStart="17dp"
@@ -19,29 +19,76 @@
         android:layout_height="wrap_content">
 
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_horizontal"
-            android:layout_centerHorizontal="true">
+            android:id="@+id/rl_info"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true">
 
             <TextView
-                android:id="@+id/tvListGalon"
+                android:id="@+id/tvListGalonNama"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:gravity="start|fill_horizontal"
+                android:text="Nama depot 1"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:text="Nama Depot 1"
                 android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tvListGalonAlamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvListGalonNama"
+                android:gravity="start|fill_horizontal"
+                android:text="Jl Menuju surga no.1"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="15dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/rl_info">
+
+            <TextView
+                android:id="@+id/tvRp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:textSize="13sp"
+                android:text="Rp " />
+
+            <TextView
+                android:id="@+id/tvListGalonHarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tvRp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tvListGalon"
-                android:layout_marginStart="15dp"
-                android:text="Jl. Menuju Surga No.1" />
+                android:layout_toRightOf="@id/tvListGalonHarga"
+                android:layout_marginEnd="7dp"
+                android:textSize="13sp"
+                android:text=" /kg" />
 
+            <TextView
+                android:id="@+id/noHpDepot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="43" />
 
         </RelativeLayout>
     </RelativeLayout>

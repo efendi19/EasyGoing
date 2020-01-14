@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/cv_list_laundry_sepatu"
-    android:layout_height="80dp"
+    android:id="@+id/cv_list_laundry"
     android:layout_width="match_parent"
-    android:layout_marginTop="17dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tvsubTitle"
     android:layout_marginStart="17dp"
+    android:layout_marginTop="17dp"
     android:layout_marginEnd="17dp"
-    android:layout_marginBottom="5dp"
     app:cardCornerRadius="4dp"
-    app:cardElevation="2dp"
-    android:foreground="?attr/selectableItemBackground"
-    android:clickable="true"
-    android:focusable="true">
+    app:cardElevation="1dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -20,30 +17,48 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_horizontal"
-            android:layout_centerHorizontal="true">
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal">
 
             <TextView
-                android:id="@+id/tvListGalon"
-                android:layout_width="wrap_content"
+                android:id="@+id/tvListPakaianNama1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="Nama Laundry 1"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="Nama Laundry Sepatu 1"
-                android:textColor="@color/colorPrimary" />
+                android:textStyle="bold" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/tvListPakaianAlamat1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tvListGalon"
-                android:layout_marginStart="15dp"
-                android:text="Jl. Yang Panjang No.1" />
+                android:layout_below="@id/tvListPakaianNama1"
+                android:gravity="center_horizontal"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="Jl. Apa adanya no.1"
+                android:textAlignment="center" />
 
+            <TextView
+                android:id="@+id/tvPhone1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@id/tvListPakaianAlamat1"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textSize="11sp"
+                android:text="+6289655511925" />
 
         </RelativeLayout>
+
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

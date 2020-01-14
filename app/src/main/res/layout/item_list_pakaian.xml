@@ -25,7 +25,7 @@
             android:layout_centerHorizontal="true">
 
             <TextView
-                android:id="@+id/tvListPakaian"
+                android:id="@+id/tvTitileJenisPakaian"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -41,7 +41,7 @@
                 android:id="@+id/tv_jp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tvListPakaian"
+                android:layout_below="@id/tvTitileJenisPakaian"
                 android:layout_marginStart="15dp"
                 android:gravity="center_horizontal"
                 android:text="Jenis Paket :" />
@@ -55,26 +55,28 @@
                 android:layout_below="@id/tv_jp">
 
                 <Button
+                    android:id="@+id/btnPakaianReguler"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:textAllCaps="false"
+                    android:text="Reguler"
                     android:background="@drawable/rounded_button"
                     android:textColor="@android:color/white"
                     android:layout_marginStart="15dp"
-                    android:layout_marginEnd="5dp"
-                    android:text="Reguler" />
+                    android:layout_marginEnd="5dp" />
 
                 <Button
+                    android:id="@+id/btnPakaianKilat"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:textAllCaps="false"
                     android:layout_marginEnd="15dp"
+                    android:text="Kilat"
                     android:layout_marginStart="5dp"
                     android:background="@drawable/rounded_button"
-                    android:textColor="@android:color/white"
-                    android:text="Kilat" />
+                    android:textColor="@android:color/white" />
 
             </LinearLayout>
 
@@ -98,6 +100,7 @@
                         android:text="Rp" />
 
                     <TextView
+                        android:id="@+id/tvPakaianReguler"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"
@@ -127,6 +130,7 @@
                         android:text="Rp" />
 
                     <TextView
+                        android:id="@+id/tvPakaianKilat"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textStyle="bold"

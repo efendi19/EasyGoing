@@ -1,13 +1,5 @@
 package com.easygoing.easygoing;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.cardview.widget.CardView;
-import androidx.drawerlayout.widget.DrawerLayout;
-
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
@@ -18,6 +10,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
+import androidx.drawerlayout.widget.DrawerLayout;
+
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -27,6 +27,7 @@ public class HomeActivity extends AppCompatActivity {
 
     //declare Fire base Auth
     private FirebaseAuth firebaseAuth;
+    //FirebaseUser currrentUser;
 
     //declare object
     private Toolbar toolbarHome;
@@ -43,6 +44,14 @@ public class HomeActivity extends AppCompatActivity {
 
         //Initialize Fire base Auth
         firebaseAuth = FirebaseAuth.getInstance();
+
+        /*currrentUser = firebaseAuth.getCurrentUser();
+        if (currrentUser == null ) {
+            Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
+            startActivity(intent);
+            finish();
+        }*/
+
 
         //Initialize object
         toolbarHome = findViewById(R.id.id_toolbarInclude);
@@ -135,16 +144,6 @@ public class HomeActivity extends AppCompatActivity {
             //..
             usernameHeader.setText("Username");
         }
-        /*if (user != null) {
-            //String neme = user.getDisplayName();
-            String email = user.getEmail();
-
-            //tv_username_drawe.setText(neme);
-            tv_email_drawer.setText(email);
-        } else {
-            String email = user.getEmail();
-            //tv_username_drawe.setText(email);
-        }*/
     }
 
     private void getInfoUserWithGoogleAccount() {
@@ -216,6 +215,7 @@ public class HomeActivity extends AppCompatActivity {
         } else {
             Intent intent = new Intent(HomeActivity.this, LoginActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
             finish();
         }
     }

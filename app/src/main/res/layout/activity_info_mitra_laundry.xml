@@ -25,7 +25,7 @@
                 android:layout_centerHorizontal="true"
                 android:textSize="25sp"
                 android:textStyle="bold"
-                android:text="nama1"
+                android:text="Mitra Laundry 1"
                 android:textColor="@color/colorPrimary" />
 
             <TextView
@@ -33,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_namaLaundry"
-                android:text="alamat 1"
+                android:text="Jl. Mawar Merah No 1"
                 android:layout_centerHorizontal="true" />
 
         </RelativeLayout>
@@ -60,6 +60,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
+                    android:text="7000"
                     android:layout_marginStart="5dp"
                     android:textColor="@color/colorPrimary"
                     android:textStyle="bold" />
@@ -88,7 +89,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
                 android:textStyle="italic"
-                android:text="-" />
+                android:text="Pakaian" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -103,7 +104,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
                 android:textStyle="italic"
-                android:text="-" />
+                android:text="Kilat" />
 
         </LinearLayout>
 

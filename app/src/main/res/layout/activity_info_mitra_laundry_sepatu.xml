@@ -25,13 +25,13 @@
                 android:textSize="25sp"
                 android:textStyle="bold"
                 android:textColor="@color/colorPrimary"
-                android:text="nul" />
+                android:text="Mitra Laundry Sepatu  1" />
 
             <TextView
                 android:id="@+id/tvAlamatMitraSepatu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="nul"
+                android:text="Jl. Kenanga Kuning No .1"
                 android:layout_below="@id/tvNamaMitraSepatu"
                 android:layout_centerHorizontal="true" />
 
@@ -54,7 +54,7 @@
                 android:id="@+id/tvInfoHargaSepatu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:text="10000"
                 android:textSize="20dp"
                 android:layout_marginStart="5dp"
                 android:textColor="@color/colorPrimary"
@@ -80,7 +80,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
                 android:textStyle="italic"
-                android:text="" />
+                android:text="Canvas" />
 
         </LinearLayout>
 
